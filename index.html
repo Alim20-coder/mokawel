@@ -401,6 +401,34 @@ section{overflow-x: hidden;}
 }
 .stat-box .lbl{color:var(--concrete-2);font-weight:600;margin-top:.3rem;}
 
+/* SAFETY */
+.safety-card{
+  background:var(--asphalt-3);border:1px solid var(--line);border-radius:14px;
+  padding:2rem;height:100%;transition:.3s;position:relative;overflow:hidden;
+}
+.safety-card:hover{transform:translateY(-8px);border-color:var(--amber);background:var(--asphalt-2);}
+.safety-icon{
+  width:60px;height:60px;border-radius:50%;background:rgba(247,168,27,.1);
+  display:flex;align-items:center;justify-content:center;color:var(--amber);font-size:1.6rem;
+  margin-bottom:1.2rem;border:1px dashed rgba(247,168,27,.4);
+}
+.safety-card h4{color:var(--concrete);font-size:1.15rem;}
+.safety-card p{color:var(--concrete-2);font-size:.95rem;line-height:1.8;margin:0;}
+
+/* TESTIMONIALS */
+.testi-card{
+  background:var(--asphalt-2);border:1px solid var(--line);border-radius:16px;
+  padding:2rem;text-align:center;height:100%;position:relative;
+}
+.testi-card::before{
+  content:'"';position:absolute;top:10px;right:20px;
+  font-size:4rem;color:rgba(247,168,27,.1);font-family:serif;line-height:1;
+}
+.testi-stars{color:var(--amber);font-size:1.1rem;margin-bottom:1rem;}
+.testi-text{color:var(--concrete-2);font-size:.95rem;line-height:1.9;font-style:italic;margin-bottom:1.5rem;}
+.testi-author{font-weight:700;color:var(--concrete);font-size:1.05rem;}
+.testi-role{color:var(--rust);font-size:.85rem;font-family:var(--font-mono);}
+
 /* FAQ */
 .accordion-item{
   background:var(--asphalt-2)!important;
@@ -563,11 +591,11 @@ footer p{color:var(--concrete-2);font-size:.85rem;margin:0;}
       <ul class="navbar-nav mx-auto gap-1 mt-3 mt-lg-0">
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">من نحن</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#services">خدماتنا</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#why-us">مميزاتنا</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#safety">الأمان والبيئة</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#process">آلية العمل</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#gallery">معرض الأعمال</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#coverage">مناطق التغطية</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#faq">الأسئلة الشائعة</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#gallery">الأعمال</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#testimonials">آراء العملاء</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#coverage">المناطق</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">تواصل معنا</a></li>
       </ul>
       <a href="tel:0531928837" class="btn btn-call-nav mt-3 mt-lg-0"><i class="bi bi-telephone-fill ms-1"></i> 0531928837</a>
@@ -834,6 +862,52 @@ footer p{color:var(--concrete-2);font-size:.85rem;margin:0;}
   </div>
 </section>
 
+<!-- ===================== 5. SAFETY ===================== -->
+<section id="safety" class="section section-alt hazard-border">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <span class="eyebrow">معايير الأمان والبيئة</span>
+        <h2 class="section-title">سلامة <span class="u">موقعك</span> أولويتنا القصوى</h2>
+        <p class="section-lead">نحن لا نهدم ونبني فقط، بل نلتزم بأعلى معايير السلامة المهنية لحماية العمال، المارة، والمباني المجاورة. كما نطبق إجراءات صارمة للحد من التلوث البيئي.</p>
+        <a href="#contact" class="btn btn-outline-hero mt-3"><i class="bi bi-shield-check ms-2"></i> استفسر عن خطة السلامة</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <div class="safety-card">
+              <div class="safety-icon"><i class="bi bi-shield-check"></i></div>
+              <h4>تأمين المباني المجاورة</h4>
+              <p>استخدام تقنيات القص والفصل الدقيق لضمان عدم انتقال الاهتزازات والتشققات للمباني الملاصقة.</p>
+            </div>
+          </div>
+          <div class="col-md-6 reveal" style="transition-delay:0.1s">
+            <div class="safety-card">
+              <div class="safety-icon"><i class="bi bi-volume-mute"></i></div>
+              <h4>مكافحة الغبار والضوضاء</h4>
+              <p>الرش المستمر بالمياه واستخدام معدات كاتمة للصوت لتقليل الإزعاج والتلوث في منطقة العمل.</p>
+            </div>
+          </div>
+          <div class="col-md-6 reveal">
+            <div class="safety-card">
+              <div class="safety-icon"><i class="bi bi-person-gear"></i></div>
+              <h4>معدات الوقاية الشخصية</h4>
+              <p>جميع عمالنا ملتزمون بارتداء أدوات السلامة المهنية (خوذ، نظارات، قفازات، أحذية أمان).</p>
+            </div>
+          </div>
+          <div class="col-md-6 reveal" style="transition-delay:0.1s">
+            <div class="safety-card">
+              <div class="safety-icon"><i class="bi bi-recycle"></i></div>
+              <h4>التخلص الآمن من الأنقاض</h4>
+              <p>فرز المخلفات ونقلها إلى المكبات المصرح بها بيئياً، للمساهمة في استدامة ونظافة مدينتنا.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== 6. GALLERY ===================== -->
 <section id="gallery" class="section">
   <div class="container">
@@ -862,6 +936,59 @@ footer p{color:var(--concrete-2);font-size:.85rem;margin:0;}
     </div>
   </div>
 </div>
+
+<!-- ===================== 6B. TESTIMONIALS ===================== -->
+<section id="testimonials" class="section section-alt hazard-border">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-4 reveal">
+        <span class="eyebrow">آراء عملائنا</span>
+        <h2 class="section-title">ماذا يقول <span class="u">العملاء</span> عن خدماتنا؟</h2>
+        <p class="section-lead">نفتخر بثقة عملائنا في الأحساء والمنطقة الشرقية. رضاكم هو هدفنا الأول وشهادتكم هي وسام نعتز به.</p>
+        <div class="d-flex gap-2 mt-4">
+          <button class="btn btn-outline-hero rounded-circle p-2" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev" style="width:46px;height:46px;"><i class="bi bi-chevron-right"></i></button>
+          <button class="btn btn-outline-hero rounded-circle p-2" type="button" data-bs-target="#testiCarousel" data-bs-slide="next" style="width:46px;height:46px;"><i class="bi bi-chevron-left"></i></button>
+        </div>
+      </div>
+      <div class="col-lg-8 reveal">
+        <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" style="overflow:visible;">
+            <div class="carousel-item active">
+              <div class="testi-card">
+                <div class="testi-stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testi-text">"تعاملت معاهم في هدم ملحق قديم، الصراحة شغلهم نظيف وسريع، والأهم إنهم حافظوا على السور وما ضروا جيراننا. أنصح بالتعامل معهم."</p>
+                <div class="testi-author">أبو عبدالله</div>
+                <div class="testi-role">عميل من المبرز</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testi-card">
+                <div class="testi-stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </div>
+                <p class="testi-text">"شغل الإسفلت ممتاز جداً، سووا لي مواقف العمارة بشكل مرتب وبميول ممتاز لتصريف المطر. السعر كان معقول والتنفيذ في الموعد."</p>
+                <div class="testi-author">مؤسسة البناء الحديث</div>
+                <div class="testi-role">مكتب مقاولات - الهفوف</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testi-card">
+                <div class="testi-stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testi-text">"استعنت فيهم لقص الخرسانة لعمل فتحة تكييف مركزي. المكائن اللي عندهم حديثة ما سببت أي ازعاج او تشققات. شغل احترافي بمعنى الكلمة."</p>
+                <div class="testi-author">م. خالد العتيبي</div>
+                <div class="testi-role">مهندس مدني - الدمام</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===================== 7. COVERAGE ===================== -->
 <section id="coverage" class="section section-alt hazard-border">
